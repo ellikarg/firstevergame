@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 /* Global Style */
@@ -74,15 +73,26 @@ h1 {
 .random-item {
     padding: 10px;
     height: 10px;
-    
+
 }
 
 .flex-container-operators {
     display: flex;
     text-align: center;
-    margin: 3%;
+    margin: 1%;
     border: 1px solid #005F6A;
     justify-content: center;
     flex-direction: column;
 }
 
+@media only screen and (max-width: 700px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr 4fr 1fr;
+        grid-template-areas:
+            "grid-random-numbers"
+            "grid-equation"
+            "grid-operators"
+            "grid-buttons";
+    }
+}
