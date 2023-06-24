@@ -5,12 +5,12 @@
 body {
     text-align: center;
     font-family: 'Quicksand', sans-serif;
-    color: #2F4858;
+    color: #1B3D2F;
 }
 
 h1 {
     font-size: 300%;
-    color: #005F6A;
+    color: #1B3D2F;
 }
 
 .gaming-rules {
@@ -18,8 +18,9 @@ h1 {
 }
 
 .button {
-    color: #2F4858;
+    color: #1B3D2F;
     font-family: 'Quicksand', sans-serif;
+    background-color: #E3BD39;
 }
 
 /* Grid Style */
@@ -32,7 +33,7 @@ h1 {
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 3fr 1fr;
     gap: 5px;
-    background-color: black;
+    border: 1px solid black;
     grid-template-areas:
         "grid-random-numbers grid-operators"
         "grid-equation grid-operators"
@@ -40,7 +41,7 @@ h1 {
 }
 
 .grid-items {
-    background-color: grey;
+    background-color: #FFF9EC;
     align-items: center;
 }
 
@@ -66,7 +67,7 @@ h1 {
     display: flex;
     text-align: center;
     margin: 1%;
-    border: 1px solid #005F6A;
+    border: 1px solid #1B3D2F;
     justify-content: center;
 }
 
@@ -80,7 +81,7 @@ h1 {
     display: flex;
     text-align: center;
     margin: 1%;
-    border: 1px solid #005F6A;
+    border: 1px solid #1B3D2F;
     justify-content: center;
     flex-direction: column;
 }
