@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/* Global Style */
+
+body {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: #2F4858;
+}
+
+h1 {
+    font-size: 300%;
+    color: #005F6A;
+}
+
+.gaming-rules {
+    text-align: center;
+}
+
+.button {
+    color: #2F4858;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Grid Style */
+
+.grid-container {
+    display: grid;
+    max-width: 100%;
+    height: 650px;
+    margin: 2rem auto;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    gap: 5px;
+    background-color: black;
+    grid-template-areas:
+        "grid-random-numbers grid-operators"
+        "grid-equation grid-operators"
+        "grid-buttons grid-buttons";
+}
+
+.grid-items {
+    background-color: grey;
+    align-items: center;
+}
+
+.grid-random-numbers {
+    grid-area: grid-random-numbers;
+}
+
+.grid-equation {
+    grid-area: grid-equation;
+}
+
+.grid-operators {
+    grid-area: grid-operators;
+}
+
+.grid-buttons {
+    grid-area: grid-buttons;
+}
+
+/* Flexbox Style */
+
+.flex-container {
+    display: flex;
+    text-align: center;
+    margin: 1%;
+    border: 1px solid #005F6A;
+    justify-content: center;
+}
+
+.random-item {
+    padding: 10px;
+    height: 10px;
+    
+}
+
+.flex-container-operators {
+    display: flex;
+    text-align: center;
+    margin: 3%;
+    border: 1px solid #005F6A;
+    justify-content: center;
+    flex-direction: column;
+}
+
