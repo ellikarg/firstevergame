@@ -8,7 +8,7 @@
     <!-- font awesome and google fonts links -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Make 24</title>
 </head>
@@ -16,7 +16,7 @@
 <body>
 
 <h1>Make 24</h1>
-<button type="button" class="button"><h2>Show me the rules of the game</h2></button>
+<button type="button" class="button" id="open-rules-button"><h2>Show me the rules of the game</h2></button>
 
 <div class="grid-container">
 
@@ -47,6 +47,18 @@
         <button type="button" class="button"><h3>Start Over</h3></button>
     </div>
 </div>
+
+<dialog class="rules">
+    <h2>The Rules of the game</h2>
+    <ul>
+        <li>You will receive 4 random numbers between 1 and 9</li>
+        <li>You can use all operators, as well as brackets, available on the right</li>
+        <li>Drag and drop the numbers, operators and - if necessary - the brackets in their respectively same-colored fields in the equation</li>
+        <li>Play around putting the numbers and operators in an order so that the result of the equation will be 24!</li>
+        <li>You can use the brackets to prioritise an addition or subtraction, otherwise - as are the basic rules of mathematics - the multiplication and division will be calculated first</li>
+    </ul>
+    <button type="button" class="button" id="close-rules-button"><h3>Close</h3></button>
+</dialog>
 
 <script src="assets/js/script.js"></script>
 </body>
