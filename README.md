@@ -451,5 +451,6 @@ All images, save the background image were created by the developer.
 - inspiration from the sample project of the course (love maths game) in order to get going!
 - readme layout: https://github.com/4n4ru/CI-P2-GuessingBee
 - css: setting global variables (border-radius): https://www.youtube.com/watch?v=68O6eOGAGqA
+- javascript: pop up window for the rules of the game: https://www.youtube.com/watch?v=TAB_v6yBXIE
 
 ## Acknowledgments
