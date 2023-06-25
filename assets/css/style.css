@@ -8,6 +8,10 @@ body {
     color: #1B3D2F;
 }
 
+:root {
+    --main-radius: 15px;
+}
+
 h1 {
     font-size: 300%;
     color: #1B3D2F;
@@ -21,19 +25,24 @@ h1 {
     color: #1B3D2F;
     font-family: 'Quicksand', sans-serif;
     background-color: #E3BD39;
+    border-radius: var(--main-radius);
+    margin: 15px;
 }
 
 /* Grid Style */
 
 .grid-container {
     display: grid;
-    max-width: 100%;
-    height: 650px;
-    margin: 2rem auto;
+    max-width: 1300px;
+    max-height: 1000px;
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 3fr 1fr;
     gap: 5px;
     border: 1px solid black;
+    border-radius: var(--main-radius);
     grid-template-areas:
         "grid-random-numbers grid-operators"
         "grid-equation grid-operators"
@@ -43,6 +52,7 @@ h1 {
 .grid-items {
     background-color: #FFF9EC;
     align-items: center;
+    max-height: 100%;
 }
 
 .grid-random-numbers {
@@ -65,25 +75,26 @@ h1 {
 
 .flex-container {
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
-    margin: 1%;
+    margin: 10px;
     border: 1px solid #1B3D2F;
     justify-content: center;
+    border-radius: var(--main-radius);
 }
 
 .random-item {
     padding: 10px;
-    height: 10px;
-
 }
 
 .flex-container-operators {
     display: flex;
     text-align: center;
-    margin: 1%;
+    margin: 10px;
     border: 1px solid #1B3D2F;
     justify-content: center;
     flex-direction: column;
+    border-radius: var(--main-radius);
 }
 
 @media only screen and (max-width: 700px) {
@@ -95,5 +106,11 @@ h1 {
             "grid-equation"
             "grid-operators"
             "grid-buttons";
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .grid-random-numbers {
+        flex-direction: column;
     }
 }
