@@ -1,4 +1,3 @@
-
 //Pop up window for showing the rules of the game
 
 let rules = document.querySelector('.rules');
@@ -35,3 +34,11 @@ function randomNumbers() {
 window.onload = randomNumbers();
 
 // Drag and Drop
+
+// Check Result and Start Over Buttons 
+
+document.getElementById('reset-button').addEventListener('click', resetFunction);
+
+function resetFunction() {
+    document.getElementsByClassName('container').value = "";
+};

@@ -10,6 +10,7 @@
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
     <title>Make 24</title>
 </head>
 
@@ -32,17 +33,17 @@
 
         <div class="grid-items grid-equation flex-container drop-numbers">
             <h3 class="result">Your Equation:</h3>
-            <div class="brackets-container"></div>
-            <div class="random-item-container"></div>
-            <div class="operators-container"></div>
-            <div class="random-item-container"></div>
-            <div class="brackets-container"></div>
-            <div class="operators-container"></div>
-            <div class="brackets-container"></div>
-            <div class="random-item-container"></div>
-            <div class="operators-container"></div>
-            <div class="random-item-container"></div>
-            <div class="brackets-container"></div>
+            <div class="brackets-container container"></div>
+            <div class="random-item-container container"></div>
+            <div class="operators-container container"></div>
+            <div class="random-item-container container"></div>
+            <div class="brackets-container container"></div>
+            <div class="operators-container container"></div>
+            <div class="brackets-container container"></div>
+            <div class="random-item-container container"></div>
+            <div class="operators-container container"></div>
+            <div class="random-item-container container"></div>
+            <div class="brackets-container container"></div>
             <h3 class="result">= 24</h3>
         </div>
 
@@ -57,10 +58,10 @@
         </div>
 
         <div class="grid-items grid-buttons flex-container">
-            <button type="submit" class="button">
+            <button type="submit" class="button" id="submit-button">
                 <h3>Check Result</h3>
             </button>
-            <button type="button" class="button">
+            <button type="button" class="button" id="reset-button">
                 <h3>Start Over</h3>
             </button>
         </div>
