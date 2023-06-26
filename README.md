@@ -135,15 +135,15 @@ The page is structured in a user-friendly and easy-to-learn way. Upon arriving a
 - JavaScript
 
 ### Frameworks & Tools
-- Bootstrap v5.0
 - Git
 - GitHub
 - Gitpod
-- Tinypng
-- Paint<span>.</span>NET
 - Balsamiq
 - Font Awesome
 - Favicon<span>.</span>io
+- mycolor.space
+
+
 - JSHint
 - Lighthouse
 - W3C Markup validation service
