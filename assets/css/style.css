@@ -18,6 +18,14 @@ h1 {
     color: #007465;
 }
 
+h2 {
+    font-size: 150%;
+}
+
+h3 {
+    font-size: 150%;
+}
+
 .gaming-rules {
     text-align: center;
 }
@@ -85,10 +93,6 @@ h1 {
     border-radius: var(--main-radius);
 }
 
-.random-item {
-    padding: 10px;
-}
-
 .flex-container-operators {
     display: flex;
     text-align: center;
@@ -121,6 +125,87 @@ h1 {
     opacity: .5;
 }
 
+/* Random Number Area Style */
+
+.random-item {
+    color: #FFF9EC;
+    font-size: 150%;
+    background-color: #3b864a;
+    border: 1px solid #2F4858;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+}
+
+/* Equation Area Style */
+
+.random-item-container {
+    color: #FFF9EC;
+    background-color: #3b864a;
+    border: 1px solid #2F4858;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    min-height: 25px;
+    min-width: 25px;
+}
+
+.brackets-container {
+    color: #FFF9EC;
+    background-color: #00BCC3;
+    border: 1px solid #2F4858;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    min-height: 25px;
+    min-width: 5px;
+}
+
+.operators-container {
+    color: #FFF9EC;
+    background-color: #FB9B51;
+    border: 1px solid #2F4858;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    min-height: 10px;
+    min-width: 10px;
+}
+
+.result {
+    margin: 10px;
+}
+
+/* Input Operators Area Style */
+
+.operators-item {
+    color: #FFF9EC;
+    font-size: 150%;
+    background-color: #FB9B51;
+    border: 1px solid #2F4858;
+    border-radius: 3px;
+    text-align: center;
+    margin: 5px;
+    padding: 0 5px;
+    min-height: 10px;
+    min-width: 10px;
+}
+
+.brackets-item {
+    color: #FFF9EC;
+    background-color: #00BCC3;
+    border: 1px solid #2F4858;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    min-height: 25px;
+    min-width: 5px;
+}
 
 /* Media Queries */
 

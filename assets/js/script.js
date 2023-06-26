@@ -1,3 +1,4 @@
+
 //Pop up window for showing the rules of the game
 
 let rules = document.querySelector('.rules');
@@ -11,6 +12,7 @@ openRules.addEventListener('click', () => {
 closeRules.addEventListener('click', () => {
     rules.close();
 });
+
 
 /**
  * Function that generates random numbers
@@ -28,6 +30,8 @@ function randomNumbers() {
     document.getElementById('random-number-3').innerHTML = num3;
     document.getElementById('random-number-4').innerHTML = num4;
 
-}
+};
 
 window.onload = randomNumbers();
+
+// Drag and Drop
