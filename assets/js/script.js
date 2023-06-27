@@ -100,7 +100,7 @@ function dragLeave(event) {
 
 
 
-// Check Result and Start Over Buttons 
+// Check Result, Reset Game and Start Over Buttons 
 
 document.getElementById('reset-button').addEventListener('click', resetFunction);
 
@@ -109,4 +109,12 @@ function resetFunction() {
     for (i = 0; i < resetAll.length; i++) {
         resetAll[i].innerHTML = "";
     };
-};
+}
+
+document.getElementById('new-game').addEventListener('click', newGameFunction);
+
+function newGameFunction() {
+    resetFunction();
+    randomNumbers();
+}
+
