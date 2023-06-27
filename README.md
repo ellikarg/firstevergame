@@ -47,35 +47,34 @@ Make 24 is a game for puzzling over a mathematical equation. If you use the righ
 - getting better at the maths basics which we hardly use anymore in our daily life if we don't work with anything regarding maths!
 
 ### Site Owner Goals
-- Creating a fun and engaging game that users will want to play again and again.
-- The game should be fully responsive to be able to be played on different devices.
+- Creating a fun and challenging game that users will want to play again and again while at the same time improving making simple calculations in their heads
+- The game should be fully responsive and able to be played on different devices.
 
 ## User Experience
 
 ### Target Audience
 - casual gamers
 - people who like maths games
-- people looking for a quick and easy yet engaging game 
+- peolpe who are looking for a quick but challenging game
 
 ### User Requirements and Expectations
 - A simple and intuitive navigation system
-- Quick, easy, and fun to play
+- Easy and fun to play
 - Links and functions that work as expected
 - Good presentation and a visually appealing design regardless of screen size
-- An easy way to leave feedback
 - Accessibility
 
 ### User Stories
-1. As a user, I want to be able to pick a difficulty for the game
-2. As a user, I want to test my general knowledge by guessing different phrases
-3. As a user, I want to be able to pick the letters both by clicking the mouse and by using the keyboard
-4. As a user, I want to know what the correct phrase was in case I don't guess it correctly
-5. As a user, I want feedback on my correct answers
-6. As a user, I want confirmation that my feedback was sent
+1. As a user, I want to be able to test my maths capabilities by calculating and testing simple equations in my head
+2. As a user, I want to be able to drag and drop the random numbers, the operators and brackets in the equation area
+3. As a user, I want to be able to submit the result when I am content with my equation
+4. As a user, I want to get feedback whether the equation really resulted in the magic number 24
+5. As a user, I want to be able to reset the equation to an empty area and start from the beginning
+6. As a user, I want to be able to start the game over with new random numbers in case I get completly stuck and want to give up and try with a new set of numbers
 
 ### Site Owner Stories
-7. As a site owner, I want users to be able to contact us or make suggestions for new phrases.
-8. As a site owner, I want users to be able to find us on social media.
+7. As a site owner, I want users to be able to enjoy the game and navigate the game area intuitively
+8. As a site owner, I want users to be able to understand the rules of the game quickly
 
 ## Design
 
