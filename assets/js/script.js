@@ -102,6 +102,15 @@ function dragLeave(event) {
 
 // Check Result, Reset Game and Start Over Buttons 
 
+document.getElementById('submit-button').addEventListener('click', checkResult);
+
+function checkResult() {
+    let result = document.getElementsByClassName('container');
+    for (j = 0; j > result.length; j++) {
+        console.log(result[i].textContent);
+    };
+}
+
 document.getElementById('reset-button').addEventListener('click', resetFunction);
 
 function resetFunction() {
