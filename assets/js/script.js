@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.addEventListener('mousedown', mouseDown);
     document.body.addEventListener('dragenter', dragEnter);
     document.body.addEventListener('dragleave', dragLeave);
-})
+});
 
 function dragStart(event) {
     let item = event.target;
@@ -105,5 +105,8 @@ function dragLeave(event) {
 document.getElementById('reset-button').addEventListener('click', resetFunction);
 
 function resetFunction() {
-    document.getElementsByClassName('container').value = "";
+    let resetAll = document.getElementsByClassName('container');
+    for (i = 0; i < resetAll.length; i++) {
+        resetAll[i].innerHTML = "";
+    };
 };
