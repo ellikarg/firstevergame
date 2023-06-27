@@ -47,84 +47,67 @@ Make 24 is a game for puzzling over a mathematical equation. If you use the righ
 - getting better at the maths basics which we hardly use anymore in our daily life if we don't work with anything regarding maths!
 
 ### Site Owner Goals
-- Creating a fun and engaging game that users will want to play again and again.
-- The game should be fully responsive to be able to be played on different devices.
+- Creating a fun and challenging game that users will want to play again and again while at the same time improving making simple calculations in their heads
+- The game should be fully responsive and able to be played on different devices.
 
 ## User Experience
 
 ### Target Audience
 - casual gamers
 - people who like maths games
-- people looking for a quick and easy yet engaging game 
+- peolpe who are looking for a quick but challenging game
 
 ### User Requirements and Expectations
 - A simple and intuitive navigation system
-- Quick, easy, and fun to play
+- Easy and fun to play
 - Links and functions that work as expected
 - Good presentation and a visually appealing design regardless of screen size
-- An easy way to leave feedback
 - Accessibility
 
 ### User Stories
-1. As a user, I want to be able to pick a difficulty for the game
-2. As a user, I want to test my general knowledge by guessing different phrases
-3. As a user, I want to be able to pick the letters both by clicking the mouse and by using the keyboard
-4. As a user, I want to know what the correct phrase was in case I don't guess it correctly
-5. As a user, I want feedback on my correct answers
-6. As a user, I want confirmation that my feedback was sent
+1. As a user, I want to be able to test my maths capabilities by calculating and testing simple equations in my head
+2. As a user, I want to be able to drag and drop the random numbers, the operators and brackets in the equation area
+3. As a user, I want to be able to submit the result when I am content with my equation
+4. As a user, I want to get feedback whether the equation really resulted in the magic number 24
+5. As a user, I want to be able to reset the equation to an empty area and start from the beginning
+6. As a user, I want to be able to start the game over with new random numbers in case I get completly stuck and want to give up and try with a new set of numbers
 
 ### Site Owner Stories
-7. As a site owner, I want users to be able to contact us or make suggestions for new phrases.
-8. As a site owner, I want users to be able to find us on social media.
+7. As a site owner, I want users to be able to enjoy the game and navigate the game area intuitively
+8. As a site owner, I want users to be able to understand the rules of the game quickly
 
 ## Design
 
 ### Design Choices
-The game was designed to have a calming and relaxing effect on the user. Instead of the classic stick figure being hanged, the game uses flowers that lose petals. By doing so the negative connotation of the game being morbid or offensive is removed.
 
 ### Colour
-The color palette was chosen to match the flowery theme of the background image. A color picker was used to pick colors from the background image, these colors were then further adjusted to meet accessibility criteria. 
+The colour palette was chosen to match the flowery theme of the background image. A color picker was used to pick colors from the background image, these colors were then further adjusted to meet accessibility criteria. 
 
 <details><summary>Colour palette</summary>
-<img src="docs/features/color-palette.jpg">
+<img src="readme_assets/color_scheme.PNG">
+<img src="readme_assets/color_scheme_2.PNG">
 </details>
 
 ### Fonts
-For the fonts, Bootstrap's Native font stack was used. The phrase that is to be guessed monospace is used to avoid the words jumping from one line to the next and back depending on the guessed letter. 
+I used the google font "Quicksand", which is part of the sans-serif-family, for easy readability in the weight 400. 
 
 ### Structure
-The page is structured in a user-friendly and easy-to-learn way. Upon arriving at the website the user sees a screen with the option to choose a difficulty for the game. The website consists of three separate pages:
+The page is structured in a user-friendly way and has only one main page, which is divided into different areas.
 
-- A homepage with 4 different views:
-    - one for selecting a difficulty
-    - one for playing the game
-    - one that is shown after a correct guess
-    - one that is shown after the user runs out of moves
-- A contact form
-- A 404 page
+- A homepage with 3 different areas:
+    - the rules pop up window
+    - the gaming area with random numbers, the equation and the input areas
+    - the buttons area to check the result, to reset the game or to start a new game.
+
 
 ### Wireframes
 
-<details><summary>Start screen</summary>
-<img src="docs/wireframes/start-screen.png">
-</details>
 <details><summary>Game screen</summary>
-<img src="docs/wireframes/game-screen.png">
+<img src="readme_assets/Make_24.png">
 </details>
-<details><summary>Correct screen</summary>
-<img src="docs/wireframes/correct-screen.png">
-</details>
-<details><summary>Game over screen</summary>
-<img src="docs/wireframes/game-over-screen.png">
-</details>
-<details><summary>Contact Us</summary>
-<img src="docs/wireframes/contact-us.png">
-</details>
-<details><summary>Form confirmation</summary>
-<img src="docs/wireframes/form-confirmation.png">
-</details>
-<details><summary>404 page</summary>
-<img src="docs/wireframes/404-page.png">
+
+<details><summary>Initial Ideas for features</summary>
+<img src="readme_assets/Make24_features.png">
 </details>
 
 ## Technologies Used
@@ -152,92 +135,12 @@ The page is structured in a user-friendly and easy-to-learn way. Upon arriving a
 - EmailJS
 
 ## Features
-The site consists of three pages and nine features
-
-### Header
-- Featured on all pages
-- Consists of the game logo and game title
-
-<details><summary>Header</summary>
-<img src="docs/features/feature-heading.jpg">
-</details>
-
-### Footer
-- Featured on all pages
-- Consists of a section providing social media links and a link to the contact form
-- User story covered: 8
-
-<details><summary>Footer</summary>
-<img src="docs/features/feature-footer.jpg">
-</details>
-
-### Start screen
-- Provides an option to choose between three different game difficulties.
-- User story covered: 1
-
-<details><summary>Start screen</summary>
-<img src="docs/features/feature-start-screen.jpg">
-</details>
-
-### Game screen
-- Consists of 6 different sections:
-    - Game difficulty that is currently being played
-    - A section with the current score and the h-score
-    - An image that shows how many moves are left in the game round
-    - The theme of the current phrase to be guessed
-    - The phrase to be guessed represented with underscores that switch to letters after each correct guess
-    - Alphabet buttons
-    - User stories covered: 2, 3
-
-<details><summary>Game screen</summary>
-<img src="docs/features/feature-game-screen.jpg">
-</details>
-
-### Game over screen
-- Consists of three sections
-    - A section with the current score and the h-score
-    - The game over message with a picture of a sad bee
-    - Buttons to chose what to do next
-    - User stories covered: 4
-
-<details><summary>Game Over Screen</summary>
-<img src="docs/features/feature-game-over-screen.jpg">
-</details>
-
-### Correct guess screen
-- Consists of four sections
-    - Game difficulty that is currently being played
-    - A section with the current score and the h-score
-    - The congratulatory message with a picture of a happy bee
-    - Buttons to chose what to do next
-    - User story covered: 5
-
-<details><summary>Correct Guess screen</summary>
-<img src="docs/features/feature-correct-screen.jpg">
-</details>
-
-### Contact form
-- A way for the user to provide feedback
-- User story covered 7 
-
-<details><summary>Contact Form</summary>
-<img src="docs/features/feature-contact-form.jpg">
-</details>
-
-### Form confirmation
-- Provides the user with feedback after the form has been submitted and a button to return to the game
-- User story covered: 6
-
-<details><summary>Form confirmation</summary>
-<img src="docs/features/feature-form-confirmation.jpg">
-</details>
-
-### 404 message
-- Provides the user with a way to return to the game after clicking on a broken link
-
-<details><summary>404 message</summary>
-<img src="docs/features/feature-404.jpg">
-</details>
+Gaming page:
+1. Pop up window to show the rules of the game
+2. Random numbers: function math.random used in the script.js file to pick 4 random numbers from 1 to 9, drag elements to be put in the dropzone (equation)
+3. Equation: dropzone for the random numbers and input operators, javascript function checks whether the result euqals 24
+4. Input Operators: drag elements to be put in the dropzone (equation)
+5. Three buttons: one to check if the result is correct, one to reset the game and therefore empty the equation area and one for starting a new gamewith new random numbers
 
 ## Validation
 
@@ -442,10 +345,10 @@ You can clone the repository by following these steps:
 6. In JavaScript create a function that listens to a submit event and then initializes the SDK with your user id (emailjs.init('YOUR_USER_ID');) and submits the form (emailjs.sendForm('contact_service', 'contact_form', this);)
 
 ## Credits
-All images, save the background image were created by the developer.
+The layout was created by the developer.
 
 ### Media
-- [background image]('assets/images/background.jpg'): <a href='https://www.freepik.com/free-photos-vectors/floral'>Floral vector created by macrovector_official - www.freepik.com</a>
+There was no media used for this game
 
 ### Code
 - inspiration from the sample project of the course (love maths game) in order to get going!
@@ -453,6 +356,6 @@ All images, save the background image were created by the developer.
 - readme layout: https://github.com/4n4ru/CI-P2-GuessingBee
 - css: setting global variables (border-radius): https://www.youtube.com/watch?v=68O6eOGAGqA
 - javascript: pop up window for the rules of the game: https://www.youtube.com/watch?v=TAB_v6yBXIE
-- 
+- javascript: drag and drop code partly from https://www.youtube.com/watch?v=Pje43sNdsaA
 
 ## Acknowledgments
