@@ -79,7 +79,6 @@ Make 24 is a game for puzzling over a mathematical equation. If you use the righ
 ## Design
 
 ### Design Choices
-The game was designed to have a calming and relaxing effect on the user. Instead of the classic stick figure being hanged, the game uses flowers that lose petals. By doing so the negative connotation of the game being morbid or offensive is removed.
 
 ### Colour
 The color palette was chosen to match the flowery theme of the background image. A color picker was used to pick colors from the background image, these colors were then further adjusted to meet accessibility criteria. 
@@ -89,23 +88,21 @@ The color palette was chosen to match the flowery theme of the background image.
 </details>
 
 ### Fonts
-For the fonts, Bootstrap's Native font stack was used. The phrase that is to be guessed monospace is used to avoid the words jumping from one line to the next and back depending on the guessed letter. 
+I used the google font "Quicksand", which is part of the sans-serif-family, for easy readability in the weight 400. 
 
 ### Structure
-The page is structured in a user-friendly and easy-to-learn way. Upon arriving at the website the user sees a screen with the option to choose a difficulty for the game. The website consists of three separate pages:
+The page is structured in a user-friendly way and has only one main page, which is divided into different areas.
 
-- A homepage with 4 different views:
-    - one for selecting a difficulty
-    - one for playing the game
-    - one that is shown after a correct guess
-    - one that is shown after the user runs out of moves
-- A contact form
-- A 404 page
+- A homepage with 3 different areas:
+    - the rules pop up window
+    - the gaming area with random numbers, the equation and the input areas
+    - the buttons area to check the result, to reset the game or to start a new game.
+
 
 ### Wireframes
 
-<details><summary>Start screen</summary>
-<img src="docs/wireframes/start-screen.png">
+<details><summary>Game screen</summary>
+![Make 24](https://github.com/ellikarg/firstevergame/assets/132999023/c2567c59-6663-4a74-9565-4e8a3ff86962)
 </details>
 <details><summary>Game screen</summary>
 <img src="docs/wireframes/game-screen.png">
@@ -120,8 +117,7 @@ The page is structured in a user-friendly and easy-to-learn way. Upon arriving a
 <img src="docs/wireframes/contact-us.png">
 </details>
 <details><summary>Form confirmation</summary>
-<img src="docs/wireframes/form-confirmation.png">
-</details>
+
 <details><summary>404 page</summary>
 <img src="docs/wireframes/404-page.png">
 </details>
