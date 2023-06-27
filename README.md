@@ -84,7 +84,8 @@ Make 24 is a game for puzzling over a mathematical equation. If you use the righ
 The color palette was chosen to match the flowery theme of the background image. A color picker was used to pick colors from the background image, these colors were then further adjusted to meet accessibility criteria. 
 
 <details><summary>Colour palette</summary>
-<img src="docs/features/color-palette.jpg">
+<img src="readme_assets/color_scheme.png">
+<img src="readme_assets/color_scheme_2.png">
 </details>
 
 ### Fonts
@@ -102,24 +103,11 @@ The page is structured in a user-friendly way and has only one main page, which 
 ### Wireframes
 
 <details><summary>Game screen</summary>
-<img src="Make 24.png">
+<img src="readme_assets/Make_24.png">
 </details>
-<details><summary>Game screen</summary>
-<img src="docs/wireframes/game-screen.png">
-</details>
-<details><summary>Correct screen</summary>
-<img src="docs/wireframes/correct-screen.png">
-</details>
-<details><summary>Game over screen</summary>
-<img src="docs/wireframes/game-over-screen.png">
-</details>
-<details><summary>Contact Us</summary>
-<img src="docs/wireframes/contact-us.png">
-</details>
-<details><summary>Form confirmation</summary>
 
-<details><summary>404 page</summary>
-<img src="docs/wireframes/404-page.png">
+<details><summary>Initial Ideas for features</summary>
+<img src="readme_assets/Make24_features.png">
 </details>
 
 ## Technologies Used
