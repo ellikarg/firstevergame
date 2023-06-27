@@ -15,74 +15,80 @@
 </head>
 
 <body>
-
+    <section></section>
     <h1>Make 24</h1>
     <button type="button" class="button" id="open-rules-button">
         <h2>Show me the rules of the game</h2>
     </button>
+    </section>
 
-    <div class="grid-container">
+    <section>
+        <div class="grid-container">
 
-        <div class="grid-items grid-random-numbers flex-container drag-numbers">
-            <h3>Your random numbers are:</h3>
-            <div class="random-item" id="random-number-1" draggable="true">1</div>
-            <div class="random-item" id="random-number-2" draggable="true">2</div>
-            <div class="random-item" id="random-number-3" draggable="true">3</div>
-            <div class="random-item" id="random-number-4" draggable="true">4</div>
+            <div class="grid-items grid-random-numbers flex-container drag-numbers">
+                <h3>Your random numbers are:</h3>
+                <div class="random-item draggable" id="random-number-1" draggable="true">1</div>
+                <div class="random-item draggable" id="random-number-2" draggable="true">2</div>
+                <div class="random-item draggable" id="random-number-3" draggable="true">3</div>
+                <div class="random-item draggable" id="random-number-4" draggable="true">4</div>
+            </div>
+
+            <div class="grid-items grid-equation flex-container drop-numbers">
+                <h3 class="result">Your Equation:</h3>
+                <div class="brackets-container container"></div>
+                <div class="random-item-container container"></div>
+                <div class="operators-container container"></div>
+                <div class="random-item-container container"></div>
+                <div class="brackets-container container"></div>
+                <div class="operators-container container"></div>
+                <div class="brackets-container container"></div>
+                <div class="random-item-container container"></div>
+                <div class="operators-container container"></div>
+                <div class="random-item-container container"></div>
+                <div class="brackets-container container"></div>
+                <h3 class="result">= 24</h3>
+            </div>
+
+            <div class="grid-items grid-operators flex-container-operators">
+                <h3>Input Operators:</h3>
+                <div class="operators-item draggable" draggable="true">+</div>
+                <div class="operators-item draggable" draggable="true">-</div>
+                <div class="operators-item draggable" draggable="true">*</div>
+                <div class="operators-item draggable" draggable="true">/</div>
+                <div class="brackets-item draggable" draggable="true">(</div>
+                <div class="brackets-item draggable" draggable="true">)</div>
+            </div>
+
+            <div class="grid-items grid-buttons flex-container">
+                <button type="submit" class="button" id="submit-button">
+                    <h3>Check Result</h3>
+                </button>
+                <button type="button" class="button" id="reset-button">
+                    <h3>Start Over</h3>
+                </button>
+            </div>
         </div>
-
-        <div class="grid-items grid-equation flex-container drop-numbers">
-            <h3 class="result">Your Equation:</h3>
-            <div class="brackets-container container"></div>
-            <div class="random-item-container container"></div>
-            <div class="operators-container container"></div>
-            <div class="random-item-container container"></div>
-            <div class="brackets-container container"></div>
-            <div class="operators-container container"></div>
-            <div class="brackets-container container"></div>
-            <div class="random-item-container container"></div>
-            <div class="operators-container container"></div>
-            <div class="random-item-container container"></div>
-            <div class="brackets-container container"></div>
-            <h3 class="result">= 24</h3>
-        </div>
-
-        <div class="grid-items grid-operators flex-container-operators">
-            <h3>Input Operators:</h3>
-            <div class="operators-item">+</div>
-            <div class="operators-item">-</div>
-            <div class="operators-item">*</div>
-            <div class="operators-item">/</div>
-            <div class="brackets-item">(</div>
-            <div class="brackets-item">)</div>
-        </div>
-
-        <div class="grid-items grid-buttons flex-container">
-            <button type="submit" class="button" id="submit-button">
-                <h3>Check Result</h3>
+    </section>
+    <section>
+        <dialog class="rules">
+            <h2>The Rules of the game</h2>
+            <ul>
+                <li>You will receive 4 random numbers between 1 and 9</li>
+                <li>You can use all operators, as well as brackets, available on the right</li>
+                <li>Drag and drop the numbers, operators and - if necessary - the brackets in their respectively
+                    same-colored fields in the equation</li>
+                <li>Play around putting the numbers and operators in an order so that the result of the equation will be
+                    24!
+                </li>
+                <li>You can use the brackets to prioritise an addition or subtraction, otherwise - as are the basic
+                    rules of
+                    mathematics - the multiplication and division will be calculated first</li>
+            </ul>
+            <button type="button" class="button" id="close-rules-button">
+                <h3>Close</h3>
             </button>
-            <button type="button" class="button" id="reset-button">
-                <h3>Start Over</h3>
-            </button>
-        </div>
-    </div>
-
-    <dialog class="rules">
-        <h2>The Rules of the game</h2>
-        <ul>
-            <li>You will receive 4 random numbers between 1 and 9</li>
-            <li>You can use all operators, as well as brackets, available on the right</li>
-            <li>Drag and drop the numbers, operators and - if necessary - the brackets in their respectively
-                same-colored fields in the equation</li>
-            <li>Play around putting the numbers and operators in an order so that the result of the equation will be 24!
-            </li>
-            <li>You can use the brackets to prioritise an addition or subtraction, otherwise - as are the basic rules of
-                mathematics - the multiplication and division will be calculated first</li>
-        </ul>
-        <button type="button" class="button" id="close-rules-button">
-            <h3>Close</h3>
-        </button>
-    </dialog>
+        </dialog>
+    </section>
 
     <script src="assets/js/script.js"></script>
 </body>
