@@ -54,9 +54,6 @@ function dragStart(event) {
     console.log('DRAGSTART');
 
     event.dataTransfer.setData('text/plain', event.target.textContent);
-    event.dataTransfer.effectAllowed = "move";
-    event.dataTransfer.dropEffect = "move";
-
 }
 
 function drop(event) {
