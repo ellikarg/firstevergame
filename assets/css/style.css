@@ -6,7 +6,8 @@
 body {
     text-align: center;
     font-family: 'Quicksand', sans-serif;
-    color: #007465;
+    color: #213950;
+    background-color: #1B3D2F;
 }
 
 :root {
@@ -15,7 +16,7 @@ body {
 
 h1 {
     font-size: 200%;
-    color: #007465;
+    color: #9AB0A6;
 }
 
 h2 {
@@ -31,12 +32,13 @@ h3 {
 }
 
 .button {
-    color: #005F6A;
+    color: #213950;
     font-family: 'Quicksand', sans-serif;
     background-color: #E3BD39;
     border-radius: var(--main-radius);
     margin: 15px;
     min-width: 100px;
+    border-color: #66480F;
 }
 
 /* Grid Style */
@@ -51,7 +53,6 @@ h3 {
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 2fr 1fr;
     gap: 5px;
-    border: 1px solid #2F4858;
     border-radius: var(--main-radius);
     grid-template-areas:
         "grid-random-numbers grid-operators"
@@ -60,7 +61,7 @@ h3 {
 }
 
 .grid-items {
-    background-color: #FFF9EC;
+    background-color: #9AB0A6;
     align-items: center;
     max-height: 100%;
 }
@@ -88,7 +89,6 @@ h3 {
     flex-wrap: wrap;
     text-align: center;
     margin: 10px;
-    border: 1px solid #2F4858;
     justify-content: center;
     border-radius: var(--main-radius);
 }
@@ -97,7 +97,6 @@ h3 {
     display: flex;
     text-align: center;
     margin: 10px;
-    border: 1px solid #2F4858;
     justify-content: center;
     flex-direction: column;
     border-radius: var(--main-radius);
@@ -108,8 +107,8 @@ h3 {
 .rules {
     padding: 1em;
     max-width: 800px;
-    border-color: #2F4858;
-    color: #007465;
+    border-color: #213950;
+    color: #1B3D2F;
     background-color: #FFF9EC;
     font-size: 120%;
     margin: auto 1rem;
@@ -121,17 +120,17 @@ h3 {
 }
 
 .rules::backdrop {
-    background: #2F4858;
+    background: #1B3D2F;
     opacity: .5;
 }
 
 /* Random Number Area Style */
 
 .random-item {
-    color: #FFF9EC;
+    color: #9AB0A6;
     font-size: 120%;
-    background-color: #3b864a;
-    border: 1px solid #2F4858;
+    background-color: #1B3D2F;
+    border: 1px solid #213950;
     border-radius: 3px;
     padding: 10px;
     text-align: center;
@@ -141,9 +140,9 @@ h3 {
 /* Equation Area Style */
 
 .random-item-container {
-    color: #FFF9EC;
-    background-color: #3b864a;
-    border: 1px solid #2F4858;
+    color: #9AB0A6;
+    background-color: #1B3D2F;
+    border: 1px solid #213950;
     border-radius: 3px;
     padding: 10px;
     text-align: center;
@@ -153,9 +152,9 @@ h3 {
 }
 
 .brackets-container {
-    color: #FFF9EC;
-    background-color: #00BCC3;
-    border: 1px solid #2F4858;
+    color: #9AB0A6;
+    background-color: #504872;
+    border: 1px solid #213950;
     border-radius: 3px;
     padding: 10px;
     text-align: center;
@@ -165,9 +164,9 @@ h3 {
 }
 
 .operators-container {
-    color: #FFF9EC;
-    background-color: #FB9B51;
-    border: 1px solid #2F4858;
+    color: #9AB0A6;
+    background-color: #7A3C28;
+    border: 1px solid #213950;
     border-radius: 3px;
     padding: 10px;
     text-align: center;
@@ -183,10 +182,10 @@ h3 {
 /* Input Operators Area Style */
 
 .operators-item {
-    color: #FFF9EC;
+    color: #9AB0A6;
     font-size: 120%;
-    background-color: #FB9B51;
-    border: 1px solid #2F4858;
+    background-color: #7A3C28;
+    border: 1px solid #213950;
     border-radius: 3px;
     text-align: center;
     margin: 5px;
@@ -196,9 +195,9 @@ h3 {
 }
 
 .brackets-item {
-    color: #FFF9EC;
-    background-color: #00BCC3;
-    border: 1px solid #2F4858;
+    color: #9AB0A6;
+    background-color: #504872;
+    border: 1px solid #213950;
     border-radius: 3px;
     padding: 10px;
     text-align: center;
