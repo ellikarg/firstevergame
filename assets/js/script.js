@@ -105,10 +105,18 @@ function dragLeave(event) {
 document.getElementById('submit-button').addEventListener('click', checkResult);
 
 function checkResult() {
-    let result = document.getElementsByClassName('container');
-    for (j = 0; j > result.length; j++) {
-        console.log(result[i].textContent);
+    let equation = document.getElementById('equation');
+    let equationItems = equation.children;
+
+    let start = '';
+
+    for (let j = 0; j < equationItems.length; j++) {
+        start += equationItems[i].textContent;
     };
+
+    let result = eval(expression);
+    return result;
+
 }
 
 document.getElementById('reset-button').addEventListener('click', resetFunction);
