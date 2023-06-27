@@ -52,7 +52,11 @@ function dragStart(event) {
         item = item.firstElementChild;
     }
     console.log('DRAGSTART');
-    event.dataTransfer.setData('text/plain', 'some data');
+
+    event.dataTransfer.setData('text/plain', event.target.textContent);
+    event.dataTransfer.effectAllowed = "move";
+    event.dataTransfer.dropEffect = "move";
+
 }
 
 function drop(event) {
@@ -71,7 +75,6 @@ function dragOver(event) {
     if (!container.classList.contains('container')) return;
 
     event.preventDefault();
-    //container.classList.add('over');
 }
 
 function mouseDown(event) {
