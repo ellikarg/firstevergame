@@ -135,7 +135,12 @@ The page is structured in a user-friendly way and has only one main page, which 
 - EmailJS
 
 ## Features
-
+Gaming page:
+1. Pop up window to show the rules of the game
+2. Random numbers: function math.random used in the script.js file to pick 4 random numbers from 1 to 9, drag elements to be put in the dropzone (equation)
+3. Equation: dropzone for the random numbers and input operators, javascript function checks whether the result euqals 24
+4. Input Operators: drag elements to be put in the dropzone (equation)
+5. Three buttons: one to check if the result is correct, one to reset the game and therefore empty the equation area and one for starting a new gamewith new random numbers
 
 ## Validation
 
@@ -340,10 +345,10 @@ You can clone the repository by following these steps:
 6. In JavaScript create a function that listens to a submit event and then initializes the SDK with your user id (emailjs.init('YOUR_USER_ID');) and submits the form (emailjs.sendForm('contact_service', 'contact_form', this);)
 
 ## Credits
-All images, save the background image were created by the developer.
+The layout was created by the developer.
 
 ### Media
-- [background image]('assets/images/background.jpg'): <a href='https://www.freepik.com/free-photos-vectors/floral'>Floral vector created by macrovector_official - www.freepik.com</a>
+There was no media used for this game
 
 ### Code
 - inspiration from the sample project of the course (love maths game) in order to get going!
@@ -351,6 +356,6 @@ All images, save the background image were created by the developer.
 - readme layout: https://github.com/4n4ru/CI-P2-GuessingBee
 - css: setting global variables (border-radius): https://www.youtube.com/watch?v=68O6eOGAGqA
 - javascript: pop up window for the rules of the game: https://www.youtube.com/watch?v=TAB_v6yBXIE
-- 
+- javascript: drag and drop code partly from https://www.youtube.com/watch?v=Pje43sNdsaA
 
 ## Acknowledgments
