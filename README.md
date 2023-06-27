@@ -102,7 +102,7 @@ The page is structured in a user-friendly way and has only one main page, which 
 ### Wireframes
 
 <details><summary>Game screen</summary>
-![Make 24](https://github.com/ellikarg/firstevergame/assets/132999023/c2567c59-6663-4a74-9565-4e8a3ff86962)
+<img src="Make 24.png">
 </details>
 <details><summary>Game screen</summary>
 <img src="docs/wireframes/game-screen.png">
