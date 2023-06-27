@@ -81,11 +81,11 @@ Make 24 is a game for puzzling over a mathematical equation. If you use the righ
 ### Design Choices
 
 ### Colour
-The color palette was chosen to match the flowery theme of the background image. A color picker was used to pick colors from the background image, these colors were then further adjusted to meet accessibility criteria. 
+The colour palette was chosen to match the flowery theme of the background image. A color picker was used to pick colors from the background image, these colors were then further adjusted to meet accessibility criteria. 
 
 <details><summary>Colour palette</summary>
-<img src="readme_assets/color_scheme.png">
-<img src="readme_assets/color_scheme_2.png">
+<img src="readme_assets/color_scheme.PNG">
+<img src="readme_assets/color_scheme_2.PNG">
 </details>
 
 ### Fonts
@@ -135,92 +135,7 @@ The page is structured in a user-friendly way and has only one main page, which 
 - EmailJS
 
 ## Features
-The site consists of three pages and nine features
 
-### Header
-- Featured on all pages
-- Consists of the game logo and game title
-
-<details><summary>Header</summary>
-<img src="docs/features/feature-heading.jpg">
-</details>
-
-### Footer
-- Featured on all pages
-- Consists of a section providing social media links and a link to the contact form
-- User story covered: 8
-
-<details><summary>Footer</summary>
-<img src="docs/features/feature-footer.jpg">
-</details>
-
-### Start screen
-- Provides an option to choose between three different game difficulties.
-- User story covered: 1
-
-<details><summary>Start screen</summary>
-<img src="docs/features/feature-start-screen.jpg">
-</details>
-
-### Game screen
-- Consists of 6 different sections:
-    - Game difficulty that is currently being played
-    - A section with the current score and the h-score
-    - An image that shows how many moves are left in the game round
-    - The theme of the current phrase to be guessed
-    - The phrase to be guessed represented with underscores that switch to letters after each correct guess
-    - Alphabet buttons
-    - User stories covered: 2, 3
-
-<details><summary>Game screen</summary>
-<img src="docs/features/feature-game-screen.jpg">
-</details>
-
-### Game over screen
-- Consists of three sections
-    - A section with the current score and the h-score
-    - The game over message with a picture of a sad bee
-    - Buttons to chose what to do next
-    - User stories covered: 4
-
-<details><summary>Game Over Screen</summary>
-<img src="docs/features/feature-game-over-screen.jpg">
-</details>
-
-### Correct guess screen
-- Consists of four sections
-    - Game difficulty that is currently being played
-    - A section with the current score and the h-score
-    - The congratulatory message with a picture of a happy bee
-    - Buttons to chose what to do next
-    - User story covered: 5
-
-<details><summary>Correct Guess screen</summary>
-<img src="docs/features/feature-correct-screen.jpg">
-</details>
-
-### Contact form
-- A way for the user to provide feedback
-- User story covered 7 
-
-<details><summary>Contact Form</summary>
-<img src="docs/features/feature-contact-form.jpg">
-</details>
-
-### Form confirmation
-- Provides the user with feedback after the form has been submitted and a button to return to the game
-- User story covered: 6
-
-<details><summary>Form confirmation</summary>
-<img src="docs/features/feature-form-confirmation.jpg">
-</details>
-
-### 404 message
-- Provides the user with a way to return to the game after clicking on a broken link
-
-<details><summary>404 message</summary>
-<img src="docs/features/feature-404.jpg">
-</details>
 
 ## Validation
 
