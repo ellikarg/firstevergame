@@ -212,10 +212,6 @@ h3 {
     border: 2px solid #E3BD39;
 }
 
-.used {
-    background-color: #3b864a20;
-}
-
 /* Media Queries */
 
 @media only screen and (min-width: 870px) {
@@ -234,9 +230,13 @@ h3 {
             "grid-operators"
             "grid-buttons";
     }
+
+    .drop-numbers {
+        flex-direction: column;
+    }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
     .grid-random-numbers {
         flex-direction: column;
     }

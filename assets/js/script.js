@@ -28,11 +28,6 @@ function randomNumbers() {
     document.getElementById('random-number-2').innerHTML = num2;
     document.getElementById('random-number-3').innerHTML = num3;
     document.getElementById('random-number-4').innerHTML = num4;
-
-    console.log(num1);
-    console.log(num2);
-    console.log(num3);
-    console.log(num4);
 };
 
 window.onload = randomNumbers();
@@ -136,10 +131,8 @@ function checkResult() {
     console.log(myEquation);
 
     if (myEquation === 24) {
-        //window.alert('This is the correct result');
         correctAnswer.showModal();
     } else {
-        //window.alert(`Your result is ${myEquation}, it should be 24. Try again!`);
         wrongAnswer.showModal();
         document.getElementById('wrongResult').innerHTML = `Your result is ${myEquation}, it should be 24 :(<br> Try again!`;
     }
