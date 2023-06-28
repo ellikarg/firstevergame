@@ -121,6 +121,9 @@ closeCorrect.addEventListener('click', () => {
 function checkResult() {
     let equation = document.getElementsByClassName('container');
     let fullEquation = '';
+    //let characters = "+-*/()123456789";
+
+    //if (fullEquation.match(characters)) {
 
     for (let j = 0; j < equation.length; j++) {
         let str = [equation[j].textContent];
@@ -136,6 +139,7 @@ function checkResult() {
         wrongAnswer.showModal();
         document.getElementById('wrongResult').innerHTML = `Your result is ${myEquation}, it should be 24 :(<br> Try again!`;
     }
+    //}
 }
 
 document.getElementById('reset-button').addEventListener('click', resetFunction);

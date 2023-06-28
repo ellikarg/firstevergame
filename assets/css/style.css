@@ -27,10 +27,6 @@ h3 {
     font-size: 120%;
 }
 
-.gaming-rules {
-    text-align: center;
-}
-
 .button {
     color: #213950;
     font-family: 'Quicksand', sans-serif;
@@ -40,6 +36,7 @@ h3 {
     min-width: 100px;
     border-color: #66480F;
 }
+
 
 /* Grid Style */
 
@@ -110,13 +107,16 @@ h3 {
     border-color: #213950;
     color: #1B3D2F;
     background-color: #FFF9EC;
-    font-size: 120%;
     margin: auto 1rem;
 }
 
 .rules li {
     text-align: left;
     padding: 5px 0;
+}
+
+ul p {
+    text-align: left;
 }
 
 .rules::backdrop {
