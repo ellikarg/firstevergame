@@ -109,14 +109,21 @@ document.getElementById('submit-button').addEventListener('click', checkResult);
 
 function checkResult() {
     let equation = document.getElementsByClassName('container');
-    
-    for (let j = 0; j < equation.length; j++) {
-        let array = equation[j].textContent
-        console.log(array);
-    }
+    let fullEquation = '';
 
-    let result = eval(array);
-    console.log(result);
+    for (let j = 0; j < equation.length; j++) {
+        let str = [equation[j].textContent];
+        fullEquation += str;
+    }
+    console.log(fullEquation);
+    let myEquation = eval(fullEquation);
+    console.log(myEquation);
+
+    if (myEquation === 24) {
+        window.alert('This is the correct result');
+    } else {
+        window.alert(`Your result is ${myEquation}, it should be 24. Try again!`);
+    }
 }
 
 document.getElementById('reset-button').addEventListener('click', resetFunction);
