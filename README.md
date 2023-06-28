@@ -12,7 +12,7 @@ Mockup Image
     2. [Site Owner Goals](#site-owner-goals)
 2. [User Experience](#user-experience)
     1. [Target Audience](#target-audience)
-    2. [User Requirements and Expectations](#user-requirements-and-expectations)
+    2. [User Requirements & Expectations](#user-requirements-&-expectations)
     3. [User Stories](#user-stories)
     4. [Site Owner Stories](#site-owner-stories)
 3. [Design](#design)
@@ -23,43 +23,50 @@ Mockup Image
 4. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
     2. [Frameworks & Tools](#frameworks-&-tools)
-5. [Validation](#validation)
+5. [Features](#features)
+6. [Validation](#validation)
     1. [HTML Validation](#HTML-validation)
     2. [CSS Validation](#CSS-validation)
     3. [JavaScript Validation](#javascript-validation)
     4. [Accessibility & Performance](#accessibility-&-performance)
     6. [Device testing](#performing-tests-on-various-devices)
-6. [Bugs](#Bugs)
-7. [Deployment](#deployment)
-8. [Credits](#credits)
-9. [Acknowledgments](#acknowledgments)
+7. [Bugs](#Bugs)
+8. [Deployment](#deployment)
+9. [Credits](#credits)
+10. [Acknowledgments](#acknowledgments)
 
 <a name="project-goals"></a>
 ## Project Goals
 Make 24 is a game for puzzling over a mathematical equation. If you use the right operators, 4 random numbers between 1 and 9 will always result in the magical number, 24!
 
+<a name="user-goals"></a>
 ### User Goals
 - Playing a fun mathematical game for yourself
 - getting better at the maths basics which we hardly use anymore in our daily life if we don't work with anything regarding maths!
 
+<a name="site-owner-goals"></a>
 ### Site Owner Goals
 - Creating a fun and challenging game that users will want to play again and again while at the same time improving making simple calculations in their heads
 - The game should be fully responsive and able to be played on different devices.
 
+<a name="user-experience"></a>
 ## User Experience
 
+<a name="target-audience"></a>
 ### Target Audience
 - casual gamers
 - people who like maths games
 - peolpe who are looking for a quick but challenging game
 
-### User Requirements and Expectations
+<a name="user-requirements-&-expectations"></a>
+### User Requirements & Expectations
 - A simple and intuitive navigation system
 - Easy and fun to play
 - Links and functions that work as expected
 - Good presentation and a visually appealing design regardless of screen size
 - Accessibility
 
+<a name="user-stories"></a>
 ### User Stories
 1. As a user, I want to be able to test my maths capabilities by calculating and testing simple equations in my head
 2. As a user, I want to be able to drag and drop the random numbers, the operators and brackets in the equation area
@@ -68,14 +75,15 @@ Make 24 is a game for puzzling over a mathematical equation. If you use the righ
 5. As a user, I want to be able to reset the equation to an empty area and start from the beginning
 6. As a user, I want to be able to start the game over with new random numbers in case I get completly stuck and want to give up and try with a new set of numbers
 
+<a name="site-owner-stories"></a>
 ### Site Owner Stories
 7. As a site owner, I want users to be able to enjoy the game and navigate the game area intuitively
 8. As a site owner, I want users to be able to understand the rules of the game quickly
 
+<a name="design"></a>
 ## Design
 
-### Design Choices
-
+<a name="colours"></a>
 ### Colours
 The colour palette was chosen to match the flowery theme of the background image. A color picker was used to pick colors from the background image, these colors were then further adjusted to meet accessibility criteria. 
 
@@ -84,9 +92,11 @@ The colour palette was chosen to match the flowery theme of the background image
 <img src="readme_assets/color_scheme_2.PNG">
 </details>
 
+<a name="fonts"></a>
 ### Fonts
 I used the google font "Quicksand", which is part of the sans-serif-family, for easy readability in the weight 400. 
 
+<a name="structure"></a>
 ### Structure
 The page is structured in a user-friendly way and has only one main page, which is divided into different areas.
 
@@ -95,7 +105,7 @@ The page is structured in a user-friendly way and has only one main page, which 
     - the gaming area with random numbers, the equation and the input areas
     - the buttons area to check the result, to reset the game or to start a new game.
 
-
+<a name="wireframes"></a>
 ### Wireframes
 
 <details><summary>Game screen</summary>
@@ -106,8 +116,10 @@ The page is structured in a user-friendly way and has only one main page, which 
 <img src="readme_assets/Make24_features.png">
 </details>
 
+<a name="technologies-used"></a>
 ## Technologies Used
 
+<a name="languages"></a>
 ### Languages
 - HTML
 - CSS
@@ -127,6 +139,7 @@ The page is structured in a user-friendly way and has only one main page, which 
 - JSHint
 - Lighthouse
 
+<a name="features"></a>
 ## Features
 Gaming page:
 1. Pop up window to show the rules of the game
@@ -135,8 +148,10 @@ Gaming page:
 4. Input Operators: drag elements to be put in the dropzone (equation)
 5. Three buttons: one to check if the result is correct, one to reset the game and therefore empty the equation area and one for starting a new gamewith new random numbers
 
+<a name="validation"></a>
 ## Validation
 
+<a name="HTML-validation"></a>
 ### HTML Validation
 The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors no warnings to show.
 
@@ -144,6 +159,7 @@ The W3C Markup Validation Service was used to validate the HTML of the website. 
 <img src="readme_assets/Validation_html_Make24.PNG">
 </details>
 
+<a name="CSS-validation"></a>
 ### CSS Validation
 The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website. There were no errors or warnings shown.
 
@@ -151,12 +167,14 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 <img src="readme_assets/Validation_css_Make24.PNG">
 </details>
 
+<a name="javascript-validation"></a>
 ### JavaScript Validation
 I used JSHint Static Code Analysis Tool for JavaScript to validate the Javascript files. No significant erorrs were found. There were warnings, but they were all about JS extensions for the Mozilla browser.
 <details><summary>Main Page</summary>
 <img src="readme_assets/Validation_js_Make24.PNG">
 </details>
 
+<a name=""></a>
 ### Accessibility & Performance 
 Google Lighthouse in Google Chrome Developer Tools was used to test the accessibility and performance of the website.
 
@@ -168,6 +186,7 @@ Google Lighthouse in Google Chrome Developer Tools was used to test the accessib
 <img src="readme_assets/Validation_lighthouse_mobile_Make24.PNG">
 </details>
 
+<a name=""></a>
 ### Performing tests on various devices 
 The website was tested on the following devices:
 
@@ -176,6 +195,7 @@ The website was tested on the following devices:
 
 In addition, the website was tested using the Google Chrome Developer Tools Device Toggling option for all available device options.
 
+<a name=""></a>
 ## Bugs
 
 | **Bug** | **Fix** |
@@ -185,6 +205,7 @@ In addition, the website was tested using the Google Chrome Developer Tools Devi
 | The drag and drop function would add characters as a string when dropping an element there more than once | using the .replaceChildren() method instead of the .append() method |
 | checkResult function did not get the value of the divs to interpret them as numbers and operators  | using the eval() method although it is not advised to do this without security checks beforehand |
 
+<a name=""></a>
 ## Deployment
 The website was deployed using GitHub Pages by following these steps:
 1. In the GitHub repository navigate to the Settings tab
@@ -206,12 +227,15 @@ You can clone the repository by following these steps:
 6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
 7.Press Enter to create your local clone.
 
+<a name=""></a>
 ## Credits
 The layout was created by the developer
 
+<a name=""></a>
 ### Media
 There was no media used for this game
 
+<a name=""></a>
 ### Code
 - inspiration from the sample project of the course (love maths game) in order to get going!
 - stackoverflow for any doubts about javascript functionality and usage of variables and functions
@@ -220,6 +244,7 @@ There was no media used for this game
 - javascript: pop up window for the rules of the game: https://www.youtube.com/watch?v=TAB_v6yBXIE
 - javascript: drag and drop code partly from https://www.youtube.com/watch?v=Pje43sNdsaA
 
+<a name=""></a>
 ## Acknowledgments
 
 I would like to thank a few people who helped me get through this project:
