@@ -1,6 +1,7 @@
 # Make 24
 
 Mockup Image
+<img src="readme_assets/mockup_Make24.PNG">
 
 [Live Webpage](https://ellikarg.github.io/firstevergame/)
 
@@ -146,14 +147,9 @@ Gaming page:
 
 ### HTML Validation
 The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors no warnings to show.
-<details><summary>Home</summary>
-<img src="docs/validation/html-validation-index.jpg">
-</details>
-<details><summary>Contact Us</summary>
+
+<details><summary>Main page</summary>
 <img src="docs/validation/html-validation-contact.jpg">
-</details>
-<details><summary>404</summary>
-<img src="docs/validation/html-validation-404.jpg">
 </details>
 
 ### CSS Validation
