@@ -161,50 +161,27 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 ### JavaScript Validation
 I used JSHint Static Code Analysis Tool for JavaScript to validate the Javascript files. No significant erorrs were found. There were warnings, but they were all about JS extensions for the Mozilla browser.
 <details><summary>Main Page</summary>
+<img src="readme_assets/Validation_js_Make24.PNG">
+</details>
+
+### Accessibility & Performance 
+Google Lighthouse in Google Chrome Developer Tools was used to test the accessibility and performance of the website.
+
+<details><summary>For Desktop</summary>
 <img src="">
 </details>
 
-### Accessibility
-The WAVE WebAIM web accessibility evaluation tool was used to ensure the website met high accessibility standards. All pages pass with 0 errors.
-
-<details><summary>Home</summary>
-<img src="docs/validation/accessibility-evaluation-index.jpg">
-</details>
-<details><summary>Contact</summary>
-<img src="docs/validation/accessibility-evaluation-contact.jpg">
-</details>
-<details><summary>404</summary>
-<img src="docs/validation/accessibility-evaluation-404.jpg">
-</details>
-
-### Performance 
-Google Lighthouse in Google Chrome Developer Tools was used to test the performance of the website.
-
-<details><summary>Home</summary>
-<img src="docs/validation/performance-lighthouse-index.jpg">
-</details>
-<details><summary>Contact</summary>
-<img src="docs/validation/performance-lighthouse-contact.jpg">
-</details>
-<details><summary>404</summary>
-<img src="docs/validation/performance-lighthouse-404.jpg">
+<details><summary>For Mobile Devices</summary>
+<img src="">
 </details>
 
 ### Performing tests on various devices 
 The website was tested on the following devices:
 
-- Lenovo Yoga 2 Pro (both in pc and tablet mode)
-- Honor 20 pro
-- Xiaomi Redmi Note 7
+- Dell Latitude E7240 (Chrome)
+- Huawei P30 light (Chrome)
 
 In addition, the website was tested using the Google Chrome Developer Tools Device Toggling option for all available device options.
-
-### Browser Compatability
-The website was tested on the following browsers:
-
-- Google Chrome
-- Mozilla Firefox
-- Microsoft Edge
 
 ## Bugs
 
