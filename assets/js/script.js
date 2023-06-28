@@ -29,6 +29,10 @@ function randomNumbers() {
     document.getElementById('random-number-3').innerHTML = num3;
     document.getElementById('random-number-4').innerHTML = num4;
 
+    console.log(num1);
+    console.log(num2);
+    console.log(num3);
+    console.log(num4);
 };
 
 window.onload = randomNumbers();
@@ -106,6 +110,18 @@ function dragLeave(event) {
 // Check Result, Reset Game and Start Over Buttons 
 
 document.getElementById('submit-button').addEventListener('click', checkResult);
+let wrongAnswer = document.querySelector('.wrong');
+let closeWrong = document.querySelector('#close-wrong-button');
+let correctAnswer = document.querySelector('.correct');
+let closeCorrect = document.querySelector('#close-correct-button');
+
+closeWrong.addEventListener('click', () => {
+    wrongAnswer.close();
+});
+
+closeCorrect.addEventListener('click', () => {
+    correctAnswer.close();
+});
 
 function checkResult() {
     let equation = document.getElementsByClassName('container');
@@ -120,9 +136,12 @@ function checkResult() {
     console.log(myEquation);
 
     if (myEquation === 24) {
-        window.alert('This is the correct result');
+        //window.alert('This is the correct result');
+        correctAnswer.showModal();
     } else {
-        window.alert(`Your result is ${myEquation}, it should be 24. Try again!`);
+        //window.alert(`Your result is ${myEquation}, it should be 24. Try again!`);
+        wrongAnswer.showModal();
+        document.getElementById('wrongResult').innerHTML = `Your result is ${myEquation}, it should be 24 :(<br> Try again!`;
     }
 }
 
