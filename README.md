@@ -220,101 +220,14 @@ The website was tested on the following browsers:
 - Mozilla Firefox
 - Microsoft Edge
 
-### Testing user stories
-
-1. As a user, I want to be able to pick a difficulty for the game
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Start screen | Click on the desired difficulty | The games screen loads with the desired difficulty | Works as expected |
-
-<details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-1.jpg">
-</details>
-
-2. As a user, I want to test my general knowledge by guessing different phrases
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Game screen | Click the alphabet buttons or use your keyboard to guess letters and reveal the correct answer | Either the phrase displayed or the image change depending on if your guess is correct or wrong | Works as expected |
-
-<details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-2.jpg">
-</details>
-
-3. As a user, I want to be able to pick the letters both by clicking the mouse and by using the keyboard
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Game screen | Click the alphabet buttons or use your keyboard | The used letters change color and can't be picked a second time | Works as expected |
-
-<details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-3.jpg">
-</details>
-
-4. As a user, I want to know what the correct phrase was in case I don't guess it correctly
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Game over screen | Run out of moves | The game over screen with the correct answer is displayed | Works as expected |
-
-<details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-4.jpg">
-</details>
-
-5. As a user, I want feedback on my correct answers
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Correct guess screen | Complete the phrase before you run out of moves | The correct message is displayed | works as expected |
-
-<details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-5.jpg">
-</details>
-
-6. As a user, I want confirmation that my feedback was sent
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Form confirmation | Fill out the contact form and click the submit button | A thank you message is displayed | Works as expected | 
-
-<details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-6.jpg">
-</details>
-
-7. As a site owner, I want users to be able to contact us or make suggestions for new phrases.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Contact form | Scroll down to the footer section and click the contact us link | Displays the contact form | Works as expected |
-
-<details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-7.jpg">
-</details>
-
-8. As a site owner, I want users to be able to find us on social media.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Footer | Scroll down to the footer section | See social media links | Works as expected |
-
-<details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-8.jpg">
-</details>
-
 ## Bugs
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
-| The score doesn't reset after the game is restarted | Add score reset to showStartScreen function |
-| The phrase that needs to be guessed jumps around after each correct letter picked | Change font to monospace |
-| On the correct screen, the total score is shown instead of the round score | Set the HTML to roundScore instead of score |
-| Checking correct guess is not working for uppercase letters when clicking keyboard | call the toUpperCase function on key |
-| The game container is not centered for some screen sizes | Using Bootstrap center the container for all screen sizes |
-| Alphabet buttons don't change color after they are clicked | Remove the my-btn class after the click event is fired |
-| Social media links are not visible on contact and 404 page | Add missing FontAwesome kit to the pages |
-| On some tablets, whitespace below the footer appears | Add CSS to make the pages min-height: 100vh and allow the main element to grow, but not to shrink |
-| The contact page has overflow on smaller screen sizes | Change padding and margin sizes for smaller screens |
+| The equation area has overflow on smaller screen sizes | Change padding and margin sizes for smaller screens |
+| The equation would wrap one by one, leaving it difficult to interpret it as an equation | Using another flex-container just for the numbers and operators |
+| The drag and drop function would add characters as a string when dropping an element there more than once | using the .replaceChildren() method instead of the .append() method |
+| checkResult function did not get the value of the divs to interpret them as numbers and operators  | using the eval() method although it is not advised to do this without security checks beforehand |
 
 ## Deployment
 The website was deployed using GitHub Pages by following these steps:
