@@ -149,7 +149,7 @@ Gaming page:
 The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors no warnings to show.
 
 <details><summary>Main page</summary>
-<img src="docs/validation/html-validation-contact.jpg">
+<img src="readme_assets/Validation_html_Make24.PNG">
 </details>
 
 ### CSS Validation
