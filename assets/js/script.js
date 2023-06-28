@@ -148,7 +148,7 @@ function resetFunction() {
     let resetAll = document.getElementsByClassName('container');
     for (i = 0; i < resetAll.length; i++) {
         resetAll[i].innerHTML = "";
-    };
+    }
 }
 
 document.getElementById('new-game').addEventListener('click', newGameFunction);
