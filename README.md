@@ -1,6 +1,7 @@
 # Make 24
 
 Mockup Image
+<img src="readme_assets/mockup_Make24.PNG">
 
 [Live Webpage](https://ellikarg.github.io/firstevergame/)
 
@@ -120,17 +121,16 @@ The page is structured in a user-friendly way and has only one main page, which 
 ### Frameworks & Tools
 - Git
 - GitHub
-- Gitpod
+- Codeanywhere
 - Balsamiq
 - Font Awesome
 - Favicon<span>.</span>io
 - mycolor.space
 
-
+- W3C Markup validation service
+- W3C Jigsaw CSS validation service
 - JSHint
 - Lighthouse
-- W3C Markup validation service
-- W3C Jigsaw CSS validation service 
 - WAVE WebAIM web accessibility evaluation tool
 - EmailJS
 
@@ -146,36 +146,22 @@ Gaming page:
 
 ### HTML Validation
 The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors no warnings to show.
-<details><summary>Home</summary>
-<img src="docs/validation/html-validation-index.jpg">
-</details>
-<details><summary>Contact Us</summary>
-<img src="docs/validation/html-validation-contact.jpg">
-</details>
-<details><summary>404</summary>
-<img src="docs/validation/html-validation-404.jpg">
+
+<details><summary>Main page</summary>
+<img src="readme_assets/Validation_html_Make24.PNG">
 </details>
 
 ### CSS Validation
-The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website. When validating the page as a whole, the validator shows some errors linked to Bootstrap v5.0. When validating just my custom CSS it passes with no errors.
+The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website. There were no errors or warnings shown.
 
-<details><summary>Full page</summary>
-<img src="docs/validation/css-validation-full-page.jpg">
-</details>
-<details><summary>style.css</summary>
-<img src="docs/validation/css-validation-custom-css.jpg">
+<details><summary>Main page</summary>
+<img src="readme_assets/Validation_css_Make24.PNG">
 </details>
 
 ### JavaScript Validation
-JSHint Static Code Analysis Tool for JavaScript was used to validate the Javascript files. No significant issues were found.
-<details><summary>game-settings.js</summary>
-<img src="docs/validation/js-validation-game-settings.jpg">
-</details>
-<details><summary>guessing-be.js</summary>
-<img src="docs/validation/js-validation-guessing-bee.jpg">
-</details>
-<details><summary>contact.js</summary>
-<img src="docs/validation/js-validation-contact.jpg">
+I used JSHint Static Code Analysis Tool for JavaScript to validate the Javascript files. No significant erorrs were found. There were warnings, but they were all about JS extensions for the Mozilla browser.
+<details><summary>Main Page</summary>
+<img src="">
 </details>
 
 ### Accessibility
