@@ -16,7 +16,7 @@ Mockup Image
     3. [User Stories](#user-stories)
     4. [Site Owner Stories](#site-owner-stories)
 3. [Design](#design)
-    1. [Colour](#colours)
+    1. [Colours](#colours)
     2. [Fonts](#fonts)
     3. [Structure](#structure)
     4. [Wireframes](#wireframes)
@@ -78,7 +78,7 @@ Make 24 is a game for puzzling over a mathematical equation. If you use the righ
 
 ### Design Choices
 
-### Colour
+### Colours
 The colour palette was chosen to match the flowery theme of the background image. A color picker was used to pick colors from the background image, these colors were then further adjusted to meet accessibility criteria. 
 
 <details><summary>Colour palette</summary>
