@@ -34,7 +34,8 @@ Mockup Image
 8. [Credits](#credits)
 9. [Acknowledgments](#acknowledgments)
 
-## Project Goals 
+<a name="project-goals"></a>
+## Project Goals
 Make 24 is a game for puzzling over a mathematical equation. If you use the right operators, 4 random numbers between 1 and 9 will always result in the magical number, 24!
 
 ### User Goals
@@ -112,6 +113,7 @@ The page is structured in a user-friendly way and has only one main page, which 
 - CSS
 - JavaScript
 
+<a name="frameworks-&-tools"></a>
 ### Frameworks & Tools
 - Git
 - GitHub
