@@ -126,13 +126,10 @@ The page is structured in a user-friendly way and has only one main page, which 
 - Font Awesome
 - Favicon<span>.</span>io
 - mycolor.space
-
 - W3C Markup validation service
 - W3C Jigsaw CSS validation service
 - JSHint
 - Lighthouse
-- WAVE WebAIM web accessibility evaluation tool
-- EmailJS
 
 ## Features
 Gaming page:
@@ -168,11 +165,11 @@ I used JSHint Static Code Analysis Tool for JavaScript to validate the Javascrip
 Google Lighthouse in Google Chrome Developer Tools was used to test the accessibility and performance of the website.
 
 <details><summary>For Desktop</summary>
-<img src="">
+<img src="readme_assets/Validation_lighthouse_desktop_Make24.PNG">
 </details>
 
 <details><summary>For Mobile Devices</summary>
-<img src="">
+<img src="readme_assets/Validation_lighthouse_mobile_Make24.PNG">
 </details>
 
 ### Performing tests on various devices 
@@ -214,7 +211,7 @@ You can clone the repository by following these steps:
 7.Press Enter to create your local clone.
 
 ## Credits
-The layout was created by the developer.
+The layout was created by the developer
 
 ### Media
 There was no media used for this game
@@ -229,4 +226,7 @@ There was no media used for this game
 
 ## Acknowledgments
 
-
+I would like to thank a few people who helped me get through this project:
+- my Mentor for the support and pacience
+- Ed, a tutor, who really helped me to get a function right when I was stuck
+- Alessio, a friend of mine, who cooked for me in the last days before the deadline of the project :D
