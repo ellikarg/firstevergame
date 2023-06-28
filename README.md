@@ -320,8 +320,9 @@ The website was tested on the following browsers:
 The website was deployed using GitHub Pages by following these steps:
 1. In the GitHub repository navigate to the Settings tab
 2. On the left-hand menu select Pages
-3. For the source select Branch: master
-4. After the webpage refreshes automatically you will ses a ribbon on the top saying: "Your site is published at https://4n4ru.github.io/CI-P2-GuessingBee/
+3. For the source select Branch: main
+4. Press "save"
+5. After a view minutes and a refresh of the page you will find the link to your site at the top: "Your site is published at https://ellikarg.github.io/firstevergame/
 
 You can fork the repository by following these steps:
 1. Go to the GitHub repository
@@ -335,14 +336,6 @@ You can clone the repository by following these steps:
 5. Change the current working directory to the one where you want the cloned directory
 6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
 7.Press Enter to create your local clone.
-
-### EmailJS API
-1. Create an account at emailjs.com
-2. Add new email service, make note of the contact_service id
-3. Add a new email template, make note of the contact_form id
-4. Go the the integration dashboard, make note of your user id
-5. Load the EmailJS SDK in the head of your HTML file
-6. In JavaScript create a function that listens to a submit event and then initializes the SDK with your user id (emailjs.init('YOUR_USER_ID');) and submits the form (emailjs.sendForm('contact_service', 'contact_form', this);)
 
 ## Credits
 The layout was created by the developer.
@@ -359,3 +352,5 @@ There was no media used for this game
 - javascript: drag and drop code partly from https://www.youtube.com/watch?v=Pje43sNdsaA
 
 ## Acknowledgments
+
+
