@@ -60,10 +60,13 @@ function drop(event) {
     let container = event.target;
     if (!container.classList.contains('container')) return;
 
+    console.log(`drop: dropEffect = ${event.dataTransfer.dropEffect} ; effectAllowed = ${event.dataTransfer.effectAllowed}`
+    );
+
     event.preventDefault();
     console.log('DROP', event.dataTransfer);
     let data = event.dataTransfer.getData('text/plain');
-    container.textContent += data;
+    container.replaceChildren(data);
     container.classList.remove('over');
 }
 
@@ -105,18 +108,15 @@ function dragLeave(event) {
 document.getElementById('submit-button').addEventListener('click', checkResult);
 
 function checkResult() {
-    let equation = document.getElementById('equation');
-    let equationItems = equation.children;
+    let equation = document.getElementsByClassName('container');
+    
+    for (let j = 0; j < equation.length; j++) {
+        let array = equation[j].textContent
+        console.log(array);
+    }
 
-    let start = '';
-
-    for (let j = 0; j < equationItems.length; j++) {
-        start += equationItems[i].textContent;
-    };
-
-    let result = eval(expression);
-    return result;
-
+    let result = eval(array);
+    console.log(result);
 }
 
 document.getElementById('reset-button').addEventListener('click', resetFunction);
