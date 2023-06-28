@@ -33,8 +33,16 @@ h3 {
     background-color: #E3BD39;
     border-radius: var(--main-radius);
     margin: 15px;
+    padding: 8px;
     min-width: 100px;
     border-color: #66480F;
+    font-weight: 600;
+    font-size: 110%;
+}
+
+#open-rules-button {
+    padding: 15px;
+    font-size: 130%;
 }
 
 
@@ -111,12 +119,13 @@ h3 {
 }
 
 .rules li {
-    text-align: left;
     padding: 5px 0;
+    text-align: left;
 }
 
-ul p {
+.rules p {
     text-align: left;
+    font-weight: bold;
 }
 
 .rules::backdrop {
