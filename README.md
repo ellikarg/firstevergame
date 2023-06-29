@@ -171,7 +171,7 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 
 <a name="javascript-validation"></a>
 ### JavaScript Validation
-I used JSHint Static Code Analysis Tool for JavaScript to validate the Javascript files. No significant erorrs were found. There were warnings, but they were all about JS extensions for the Mozilla browser.
+I used JSHint Static Code Analysis Tool for JavaScript to validate the Javascript files. No erorrs were found, however there were warnings that the let variable is not known in the mozilla browser.
 <details><summary>Main Page</summary>
 <img src="readme_assets/Validation_js_Make24.PNG">
 </details>
@@ -193,7 +193,9 @@ Google Lighthouse in Google Chrome Developer Tools was used to test the accessib
 The website was tested on the following devices:
 
 - Dell Latitude E7240 (Chrome)
+- acer Nitro (Microsoft Edge)
 - Huawei P30 light (Chrome)
+- Iphone 12 (Safari)
 
 In addition, the website was tested using the Google Chrome Developer Tools Device Toggling option for all available device options.
 
@@ -204,8 +206,9 @@ In addition, the website was tested using the Google Chrome Developer Tools Devi
 | ----------- | ----------- |
 | The equation area has overflow on smaller screen sizes | Change padding and margin sizes for smaller screens |
 | The equation would wrap one by one, leaving it difficult to interpret it as an equation | Using another flex-container just for the numbers and operators |
-| The drag and drop function would add characters as a string when dropping an element there more than once | using the .replaceChildren() method instead of the .append() method |
+| The drag and drop function would add characters as a string when dropping an element more than once | using the .replaceChildren() method instead of the .append() method |
 | checkResult function did not get the value of the divs to interpret them as numbers and operators  | using the eval() method although it is not advised to do this without security checks beforehand |
+| the security check with the regex () method did not work and also led to the checkResult function not firing anymore | I got the hint from my tutor to include the regex () test method already at the point of dropping an element, so now the drop function checks if the data that is being dropped is secure data and does not allow any other characters than the defined ones being dropped |
 
 <a name="deployment"></a>
 ## Deployment
