@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!-- Heading and Button with the rules of the game -->
     <section>
         <h1>Make 24</h1>
         <button type="button" class="button" id="open-rules-button">
@@ -22,9 +23,10 @@
         </button>
     </section>
 
+    <!-- Gaming Area -->
     <section>
         <div class="grid-container">
-
+            <!-- Area with random numbers for dragging and dropping -->
             <div class="grid-items grid-random-numbers flex-container drag-numbers">
                 <h2>Your random numbers are:</h2>
                 <div class="random-item draggable" id="random-number-1" draggable="true">1</div>
@@ -33,6 +35,7 @@
                 <div class="random-item draggable" id="random-number-4" draggable="true">4</div>
             </div>
 
+            <!-- Equation Area as the dropzone -->
             <div class="grid-items grid-equation flex-container drop-numbers" id="equation">
                 <h2 class="result">Your Equation:</h2>
                 <div class="flex-container">
@@ -51,6 +54,7 @@
                 <h2 class="result">= 24</h2>
             </div>
 
+            <!-- Input Operators Area for dragging and dropping -->
             <div class="grid-items grid-operators flex-container-operators">
                 <h2>Input Operators:</h2>
                 <div class="operators-item draggable" draggable="true">+</div>
@@ -61,6 +65,7 @@
                 <div class="brackets-item draggable" draggable="true">)</div>
             </div>
 
+            <!-- Area with the buttons: Check Result, Reset Game, Start New Game -->
             <div class="grid-items grid-buttons flex-container">
                 <button type="submit" class="button" id="submit-button">
                     Check Result
@@ -74,6 +79,8 @@
             </div>
         </div>
     </section>
+
+    <!-- Dialog elements for pop up windows -->
     <section>
         <dialog class="rules">
             <h2>The Rules of the game</h2>
@@ -117,6 +124,7 @@
         </dialog>
     </section>
 
+    <!-- Java Script file -->
     <script src="assets/js/script.js"></script>
 </body>
 

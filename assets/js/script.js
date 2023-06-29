@@ -44,6 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.addEventListener('dragleave', dragLeave);
 });
 
+/**
+ * function that fires the drag Event to drag items into the equation area
+ */
 function dragStart(event) {
     let item = event.target;
     if (!item.closest('.draggable')) return;
@@ -55,8 +58,14 @@ function dragStart(event) {
     event.dataTransfer.setData('text/plain', event.target.textContent);
 }
 
+/**
+ * function that fires the drop Event to drop items in the equation area
+ */
 function drop(event) {
     let container = event.target;
+    let regex = /[+\-*/()123456789]/;
+    console.log(regex);
+
     if (!container.classList.contains('container')) return;
 
     console.log(`drop: dropEffect = ${event.dataTransfer.dropEffect} ; effectAllowed = ${event.dataTransfer.effectAllowed}`
@@ -65,10 +74,18 @@ function drop(event) {
     event.preventDefault();
     console.log('DROP', event.dataTransfer);
     let data = event.dataTransfer.getData('text/plain');
-    container.replaceChildren(data);
+    if (regex.test(data)) {
+        console.log('Regex true!');
+        container.replaceChildren(data);
+    } else {
+        console.log('Regex false!');
+    }
     container.classList.remove('over');
 }
 
+/**
+ * function that fires the dragOver Event when items get dragged
+ */
 function dragOver(event) {
     let container = event.target;
     if (!container.classList.contains('container')) return;
@@ -76,12 +93,20 @@ function dragOver(event) {
     event.preventDefault();
 }
 
+/**
+ * function that fires the mouseDown Event to make the mouse appear as 
+ * a grabbing hand
+ */
 function mouseDown(event) {
     let item = event.target;
     if (!item.closest('.draggable')) return;
     item.style.cursor = 'grabbing';
 }
 
+/**
+ * function that fires the dragEnter Event when the dragged items enter 
+ * the dropzone
+ */
 function dragEnter(event) {
     let container = event.target;
     if (!container.classList.contains('container')) return;
@@ -91,6 +116,10 @@ function dragEnter(event) {
     container.classList.add('over');
 }
 
+/**
+ * function that fires the dragLeave Event when the dragged items exit 
+ * the dropzone
+ */
 function dragLeave(event) {
     let container = event.target;
     if (!container.classList.contains('container')) return;
@@ -118,12 +147,12 @@ closeCorrect.addEventListener('click', () => {
     correctAnswer.close();
 });
 
+/**
+ * function that checks whether the result equals 24
+ */
 function checkResult() {
     let equation = document.getElementsByClassName('container');
     let fullEquation = '';
-    //let characters = "+-*/()123456789";
-
-    //if (fullEquation.match(characters)) {
 
     for (let j = 0; j < equation.length; j++) {
         let str = [equation[j].textContent];
@@ -139,11 +168,14 @@ function checkResult() {
         wrongAnswer.showModal();
         document.getElementById('wrongResult').innerHTML = `Your result is ${myEquation}, it should be 24 :(<br> Try again!`;
     }
-    //}
 }
 
 document.getElementById('reset-button').addEventListener('click', resetFunction);
 
+/**
+ * function that fires when the reset button is clicked
+ * it resets the game by emptying the equation area
+ */
 function resetFunction() {
     let resetAll = document.getElementsByClassName('container');
     for (i = 0; i < resetAll.length; i++) {
@@ -153,6 +185,10 @@ function resetFunction() {
 
 document.getElementById('new-game').addEventListener('click', newGameFunction);
 
+/**
+ * function that fires when the Start New Game button is clicked
+ * it empties the equation area and sets new random numbers
+ */
 function newGameFunction() {
     resetFunction();
     randomNumbers();
