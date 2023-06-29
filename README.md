@@ -29,10 +29,12 @@ Mockup Image
     2. [CSS Validation](#CSS-validation)
     3. [JavaScript Validation](#javascript-validation)
     4. [Accessibility & Performance](#accessibility-&-performance)
-    6. [Device testing](#performing-tests-on-various-devices)
-7. [Bugs](#Bugs)
+    5. [Device testing](#performing-tests-on-various-devices)
+7. [Bugs](#bugs)
 8. [Deployment](#deployment)
 9. [Credits](#credits)
+    1. [Media](#media)
+    2. [Code](#code)
 10. [Acknowledgments](#acknowledgments)
 
 <a name="project-goals"></a>
@@ -174,7 +176,7 @@ I used JSHint Static Code Analysis Tool for JavaScript to validate the Javascrip
 <img src="readme_assets/Validation_js_Make24.PNG">
 </details>
 
-<a name=""></a>
+<a name="accessibility-&-performance"></a>
 ### Accessibility & Performance 
 Google Lighthouse in Google Chrome Developer Tools was used to test the accessibility and performance of the website.
 
@@ -186,7 +188,7 @@ Google Lighthouse in Google Chrome Developer Tools was used to test the accessib
 <img src="readme_assets/Validation_lighthouse_mobile_Make24.PNG">
 </details>
 
-<a name=""></a>
+<a name="performing-tests-on-various-devices"></a>
 ### Performing tests on various devices 
 The website was tested on the following devices:
 
@@ -195,7 +197,7 @@ The website was tested on the following devices:
 
 In addition, the website was tested using the Google Chrome Developer Tools Device Toggling option for all available device options.
 
-<a name=""></a>
+<a name="bugs"></a>
 ## Bugs
 
 | **Bug** | **Fix** |
@@ -205,7 +207,7 @@ In addition, the website was tested using the Google Chrome Developer Tools Devi
 | The drag and drop function would add characters as a string when dropping an element there more than once | using the .replaceChildren() method instead of the .append() method |
 | checkResult function did not get the value of the divs to interpret them as numbers and operators  | using the eval() method although it is not advised to do this without security checks beforehand |
 
-<a name=""></a>
+<a name="deployment"></a>
 ## Deployment
 The website was deployed using GitHub Pages by following these steps:
 1. In the GitHub repository navigate to the Settings tab
@@ -227,15 +229,15 @@ You can clone the repository by following these steps:
 6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
 7.Press Enter to create your local clone.
 
-<a name=""></a>
+<a name="credits"></a>
 ## Credits
 The layout was created by the developer
 
-<a name=""></a>
+<a name="media"></a>
 ### Media
 There was no media used for this game
 
-<a name=""></a>
+<a name="code"></a>
 ### Code
 - inspiration from the sample project of the course (love maths game) in order to get going!
 - stackoverflow for any doubts about javascript functionality and usage of variables and functions
@@ -244,7 +246,7 @@ There was no media used for this game
 - javascript: pop up window for the rules of the game: https://www.youtube.com/watch?v=TAB_v6yBXIE
 - javascript: drag and drop code partly from https://www.youtube.com/watch?v=Pje43sNdsaA
 
-<a name=""></a>
+<a name="acknowledgments"></a>
 ## Acknowledgments
 
 I would like to thank a few people who helped me get through this project:
